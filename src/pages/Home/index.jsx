@@ -2,6 +2,7 @@ import React from 'react'
 import reactLogo from '../../assets/imgs/react.svg'
 import viteLogo from '../../assets/imgs/vite.svg'
 import tailwindLogo from '../../assets/imgs/tailwind.svg'
+import withTokenCheck from '../../hoc/auth/withTokenCheck'
 
 const Home = () => {
   return (
@@ -16,4 +17,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default withTokenCheck(Home)

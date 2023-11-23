@@ -3,7 +3,9 @@ import {AppContext} from './contexts'
 import Routers from "./routers"
 
 function App() {
-  const [appContext, setAppContext] = useState(null)
+  const [appContext, setAppContext] = useState({
+    token:null
+  })
   return (
     <AppContext.Provider value={{ appContext, setAppContext }} >
       <div className="h-screen">
